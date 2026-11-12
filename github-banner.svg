@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" fill="none">
+  <defs>
+    <!-- Background Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#141418" stroke-width="1" />
+    </pattern>
+
+    <!-- Subtle Radial Glow -->
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#09090b" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Text Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#a1a1aa" />
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#27272a" />
+      <stop offset="50%" stop-color="#3f3f46" />
+      <stop offset="100%" stop-color="#27272a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="#070709" />
+  
+  <!-- Subtle Grid Overlay -->
+  <rect width="1200" height="360" rx="16" fill="url(#grid)" />
+  
+  <!-- Ambient Center Glow -->
+  <rect width="1200" height="360" rx="16" fill="url(#centerGlow)" />
+  
+  <!-- Outer Stroke Border -->
+  <rect x="1" y="1" width="1198" height="358" rx="15" fill="none" stroke="url(#borderGrad)" stroke-width="1.5" />
+
+  <!-- Corner Tech Accent Decors -->
+  <path d="M 20 40 L 20 20 L 40 20" stroke="#3f3f46" stroke-width="2" fill="none" />
+  <path d="M 1180 40 L 1180 20 L 1160 20" stroke="#3f3f46" stroke-width="2" fill="none" />
+  <path d="M 20 320 L 20 340 L 40 340" stroke="#3f3f46" stroke-width="2" fill="none" />
+  <path d="M 1180 320 L 1180 340 L 1160 340" stroke="#3f3f46" stroke-width="2" fill="none" />
+
+  <!-- Status Indicator -->
+  <g transform="translate(60, 60)">
+    <rect width="160" height="26" rx="13" fill="#121216" stroke="#27272a" stroke-width="1" />
+    <circle cx="16" cy="13" r="4" fill="#22c55e" />
+    <text x="28" y="17" fill="#a1a1aa" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="500">AVAILABLE FOR WORK</text>
+  </g>
+
+  <!-- Main Identity Header -->
+  <g transform="translate(60, 140)">
+    <text x="0" y="0" fill="url(#textGrad)" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-size="64" font-weight="800" letter-spacing="-2">sea</text>
+    <text x="130" y="-8" fill="#71717a" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="500">// seaze-code</text>
+    <text x="0" y="38" fill="#9498a4" font-family="'Inter', sans-serif" font-size="19" font-weight="400">Minecraft Developer • Paper Plugins &amp; Fabric Mods • Systems &amp; Tools</text>
+  </g>
+
+  <!-- Tech Stack Chips -->
+  <g transform="translate(60, 230)">
+    <!-- Paper -->
+    <rect x="0" y="0" width="118" height="32" rx="7" fill="#111116" stroke="#26262e" stroke-width="1" />
+    <text x="16" y="20" fill="#e4e4e7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">Paper API</text>
+
+    <!-- Fabric -->
+    <rect x="128" y="0" width="102" height="32" rx="7" fill="#111116" stroke="#26262e" stroke-width="1" />
+    <text x="144" y="20" fill="#e4e4e7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">Fabric</text>
+
+    <!-- Java -->
+    <rect x="240" y="0" width="80" height="32" rx="7" fill="#111116" stroke="#26262e" stroke-width="1" />
+    <text x="256" y="20" fill="#e4e4e7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">Java</text>
+
+    <!-- Luau -->
+    <rect x="330" y="0" width="128" height="32" rx="7" fill="#111116" stroke="#26262e" stroke-width="1" />
+    <text x="346" y="20" fill="#e4e4e7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">Roblox Luau</text>
+
+    <!-- Discord.js / Bots -->
+    <rect x="468" y="0" width="126" height="32" rx="7" fill="#111116" stroke="#26262e" stroke-width="1" />
+    <text x="484" y="20" fill="#e4e4e7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">Discord Bots</text>
+
+    <!-- Python -->
+    <rect x="604" y="0" width="96" height="32" rx="7" fill="#111116" stroke="#26262e" stroke-width="1" />
+    <text x="620" y="20" fill="#e4e4e7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">Python</text>
+
+    <!-- C# / .NET -->
+    <rect x="710" y="0" width="104" height="32" rx="7" fill="#111116" stroke="#26262e" stroke-width="1" />
+    <text x="726" y="20" fill="#e4e4e7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">C# / .NET</text>
+  </g>
+
+  <!-- Bottom Details Bar -->
+  <g transform="translate(60, 310)">
+    <text x="0" y="0" fill="#52525b" font-family="'JetBrains Mono', monospace" font-size="12">
+      <tspan fill="#71717a">github:</tspan> seaze-code
+      <tspan dx="25" fill="#3f3f46">•</tspan>
+      <tspan dx="25" fill="#71717a">discord:</tspan> pri_m.qc
+      <tspan dx="25" fill="#3f3f46">•</tspan>
+      <tspan dx="25" fill="#71717a">email:</tspan> seaze.xyz@gmail.com
+    </text>
+  </g>
+
+  <!-- Right Decorative Element: Clean Code Terminal Block -->
+  <g transform="translate(890, 85)">
+    <rect width="250" height="190" rx="10" fill="#0d0d12" stroke="#202028" stroke-width="1" />
+    
+    <!-- Window Dots -->
+    <circle cx="18" cy="18" r="4" fill="#3f3f46" />
+    <circle cx="32" cy="18" r="4" fill="#2e2e36" />
+    <circle cx="46" cy="18" r="4" fill="#2e2e36" />
+    <line x1="0" y1="34" x2="250" y2="34" stroke="#181820" stroke-width="1" />
+
+    <!-- Code Snippet -->
+    <text x="18" y="65" fill="#71717a" font-family="'JetBrains Mono', monospace" font-size="11">public class SeaDev {</text>
+    <text x="32" y="90" fill="#a1a1aa" font-family="'JetBrains Mono', monospace" font-size="11">String stack =</text>
+    <text x="44" y="112" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="11">"Paper" <tspan fill="#71717a">+</tspan> "Fabric";</text>
+    <text x="32" y="137" fill="#a1a1aa" font-family="'JetBrains Mono', monospace" font-size="11">boolean ready = <tspan fill="#38bdf8">true</tspan>;</text>
+    <text x="18" y="162" fill="#71717a" font-family="'JetBrains Mono', monospace" font-size="11">}</text>
+  </g>
+</svg>
